@@ -1,0 +1,148 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color:rgb(21, 142, 223);
+    height: 45px;
+
+}
+/* 
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button1 {
+    background-color: #008CBA;
+}
+.button2 {
+    background-color: #f44336;
+} */
+.login
+{
+    background: #eceeee;
+    border: 1px solid #091fc7;
+    border-radius: 20px;
+    height: 400px;
+    margin: 20px auto 0;
+    width: 325px;
+    text-align: center;
+}
+label{
+    display: inline-block;
+    /* float: left; */
+    clear: left;
+    width: 100px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  
+  }
+
+body, html{
+    /* margin: 0;
+    height:"100px";
+    background-image: url("p2.jpg");
+    background-image: no-repeat;
+    background-image: cover;
+    background-repeat:no-repeat; */
+    background-image: url(" https://media.giphy.com/media/3o7qDNfxtNRtLVv8qs/giphy.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+ 
+  } */
+  
+  tr:hover {background-color:#f5f5f5;}
+
+  table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+  }
+  th, td {
+    padding: 1em;
+    background: #ddd;
+    border-bottom: 2px solid white; 
+  }
+  
+  .css-mine {
+    margin-top: 2em;
+    clear: both;
+  }
+  
+  body {
+    margin: 1.5em;
+  }
+  
+
+
+
+  

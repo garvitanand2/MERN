@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample form</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"> </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- 
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul> -->
+
+    <div class = "active">
+            <button class="btn btn-info" onclick="openCity(event, 'addContact')">Add Contacts</button> 
+            <button class="btn btn-info"onclick="openCity(event, 'Paris')">View contacts </button>
+          </div>
+
+    <br>
+    <div id="addContact" style ="display:block" >
+            <form id="login" class="login"  method="POST">
+                <br>
+                <label for="fname">First name:</label>
+                <input id="fname" type="text" name="firstname" placeholder="Firstname">
+                <br><br>
+                <label for="lname"> Last name:</label>
+                <input id="lname" type="text" name="lastname" placeholder="Lastname">
+                <br><br>
+                <label for='email'>Email id:</label>
+                <input id="email" type="text" name="email" placeholder="Email">
+                <br> <br>
+                <label for="password">Password:</label>
+                <input id="password" type="password" name="password" placeholder="password">
+                <br><br>
+                <label for="mob">Mobile:</label>
+                <input id="mob" type="text" name="mobile" placeholder="Contact number">
+                <br><br>
+                <label>Suffering from</label>
+                <select id="fever" name="sufferingFrom"  style="width: 175px"  > 
+                    <option value="blank"></option>
+                    <option value="cough">Cough</option>
+                    <option value="cold">Cold</option>
+                    <option value="malaria">Malaria</option>
+                    <option value="typhoid">Typhoid</option>
+                </select>
+                <br><br>
+                <label>Gender:</label>
+                <input id='gender' type="radio" name="gender" value="male"> Male
+                <input id='gender' type="radio" name="gender" value="female"> Female
+                <input id='gender' type="radio" name="gender" value="other"> Other
+                <button id = 'submit'class="btn btn-info" name="submit" type="button" onclick="Submit()">Submit</button>
+                <button class="btn btn-danger" name="reset"   type="button" onclick="myFunctionReset()">Reset</button>
+    
+              </form>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+            <table id = "list" class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First Nmae</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email Id</th>
+                        <th scope="col">Password</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">Suffering From</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Edit Details</th>
+                        <th scope="col">Delete </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table> 
+                 
+    </div>
+    <!-- <br>
+    <br>
+    <div> -->
+   
+</body>
+
+</html>
